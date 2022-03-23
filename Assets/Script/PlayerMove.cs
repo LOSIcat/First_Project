@@ -7,6 +7,12 @@ using UnityEngine;
 // 사용자가 스페이스바를 누르면 점프하고싶다.
 // 2번까지 점프하고싶다.
 
+// 사용자가 z키를 누르면 "구르기"라고 출력된다.
+
+// 사용자가 마우스 왼쪽 키를 누르면 "공격"이라고 출력된다.
+
+
+
 // PlayerMove: 사용자의 입력에 따라 상하좌우로 이동하고 싶다.
 public class PlayerMove : MonoBehaviour
 {
@@ -35,6 +41,22 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        // 사용자가 z키를 누르면 "구르기"라고 출력된다.
+        if (Input.GetKeyDown("z"))
+        {
+            print("구르기");
+        }
+        
+
+
+
+        // 사용자가 마우스 왼쪽 키를 누르면 "공격"이라고 출력된다.
+        if (Input.GetMouseButtonDown(0))
+        {
+            Debug.Log("공격");
+        }
+
 
 
 

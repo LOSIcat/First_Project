@@ -27,5 +27,10 @@ public class CameraRotate : MonoBehaviour
         rx = Mathf.Clamp(rx, -70, 70);
 
         transform.eulerAngles = new Vector3(-rx, ry, 0);
+
+
+        // 구르고 싶다.
+        // 키워드를 누르면 앞으로 간다.
+        //엎드려서 한 바퀴 구른다.
     }
 }
