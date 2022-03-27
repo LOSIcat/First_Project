@@ -24,6 +24,7 @@ public class PlayerMove : MonoBehaviour
 
 
 
+
         cc = gameObject.GetComponent<CharacterController>();
 
 
@@ -38,9 +39,13 @@ public class PlayerMove : MonoBehaviour
     public int maxJumpCount = 2;
 
 
+    
     // Update is called once per frame
     void Update()
     {
+
+
+
 
         // 사용자가 z키를 누르면 "구르기"라고 출력된다.
         if (Input.GetKeyDown("z"))
