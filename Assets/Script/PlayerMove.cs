@@ -60,6 +60,16 @@ public class PlayerMove : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Debug.Log("공격");
+            
+
+            // 플레이어가 마우스 버튼을 누르면 무기를 위에서 아래로 휘두른다.
+            // 1/3의 확률로 휘두른다.
+            // 좌에서 우
+            // 우에서 좌
+            // 위에서 아래
+
+
+
         }
 
 

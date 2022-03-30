@@ -7,6 +7,8 @@ public class PlayerMagic : MonoBehaviour
     public GameObject sphereFactory;
     // 구 생성하는 곳
     public GameObject spherePosition;
+    public GameObject spherePosition1;
+    public GameObject spherePosition2;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +31,32 @@ public class PlayerMagic : MonoBehaviour
             // 구가 앞으로 나간다.
             sphere.transform.position = spherePosition.transform.position;
 
+            
+        }
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            // 구 공장에서 구를 만든다.
+            GameObject sphere = Instantiate(sphereFactory);
+            // 구가 앞으로 나간다.
+            sphere.transform.position = spherePosition1.transform.position;
 
         }
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            // 구 공장에서 구를 만든다.
+            GameObject sphere = Instantiate(sphereFactory);
+            // 구가 앞으로 나간다.
+            sphere.transform.position = spherePosition2.transform.position;
+
+        }
+
+        //// 플레이어가 마우스 왼쪽 버튼을 누르면 "어택"이 입력된다.
+        //if (Input.GetMouseButtonDown(0))
+        //{
+        //    Debug.Log("어택");
+        //}
+
+
+
     }
 }
